@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 お問い合わせ内容を受け付けました。<br>
 <br>
 ■メールアドレス<br>
@@ -8,3 +11,4 @@
 <br>
 ■お問い合わせ内容<br>
 {!! nl2br($body) !!}<br>
+@endsection

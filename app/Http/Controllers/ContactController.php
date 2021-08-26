@@ -17,8 +17,8 @@ class ContactController extends Controller
     {
         //バリデーションを実行（結果に問題があれば処理を中断してエラーを返す）
         $request->validate([
-            'email' => 'required|email',
             'title' => 'required',
+            'email' => 'required|email',
             'body'  => 'required',
         ]);
         
@@ -35,9 +35,9 @@ class ContactController extends Controller
     {
         //バリデーションを実行（結果に問題があれば処理を中断してエラーを返す）
         $request->validate([
-            'email' => 'required|email',
             'title' => 'required',
-            'body'  => 'required'
+            'email' => 'required|email',
+            'body'  => 'required',
         ]);
 
         //フォームから受け取ったactionの値を取得

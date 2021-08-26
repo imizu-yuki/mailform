@@ -1,0 +1,51 @@
+.fixed {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.pre-bg {
+  height: 100vh; /* 全画面表示 */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/main_01.jpg);
+}
+.pre-content {
+  text-align: center;
+  width: 70%;
+  height: auto;
+  margin-top: 12.5%;
+}
+.pre-box {
+  text-align: left;
+  display: inline-block;
+}
+h3 {
+  color: #FFFFFF;
+}
+.pre-box p {
+  color: #FFFFFF;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-bottom: -0.5rem;
+}
+footer {
+  margin-top: auto;
+}
+.pre-box a {
+  font-size: 1.1rem;
+  color: #FFFFFF;
+  line-height: 3.5rem;
+}
+
+/* mediaクエリ */
+@media only screen and (max-width: 600px) {
+  .pre-content {
+  width: 100%;
+  }
+  .pre-box p {
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  margin-bottom: -0.2rem;
+  }
+}
